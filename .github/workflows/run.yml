@@ -4,14 +4,8 @@ on:
   push:
     branches: 
       - master
-  workflow_dispatch:
-    inputs:
-      target:
-        description: '点击执行'
-        required: true
-        default: 'Star'
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '* 12 * * *'
 
 jobs:
   build:
